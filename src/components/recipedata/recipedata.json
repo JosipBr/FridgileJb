@@ -1,0 +1,93 @@
+
+{
+  "dinner":[{
+    "time": "dinner",
+    "at":"1",
+    "details": [
+      {
+        "name": "Carbonara",
+        "tag": "carbonara",
+        "id": "1",
+        "like":"false",
+        "amount": "7",
+        "ingredients": [
+          "Spaghetti",
+          "Tomato",
+          "Shrimp",
+          "Olive oil",
+          "Egg",
+          "Parmesan",
+          "Garlic"
+        ]
+      },
+      {
+        "name": "Chicken Wing Dippers",
+        "tag": "chickenwingdippers",
+        "id": "2",
+        "like":"false",
+        "amount": "4",
+        "ingredients": [
+          "Chicken wing",
+          "Cornflour",
+          "Baking powder",
+          "Sunflower oil"
+        ]
+      }
+    ]
+  }],
+
+  "lunch":[{
+    "time": "lunch",
+    "at":"2",
+    "details": [
+      {
+        "name": "Baked Sweet Potato",
+        "tag": "sweetpotato",
+        "id": "3",
+        "like":"false",
+        "amount": "2",
+        "ingredients": ["Sweet potato", "Butter"]
+      },
+      {
+        "name": "Turkey Lunch Bowl",
+        "tag": "turkeylunchbowl",
+        "id": "4",
+        "amount": "7",
+        "like":"false",
+        "ingredients": [
+          "Onion",
+          "Lemon",
+          "Turkey breast",
+          "Clementine",
+          "Garlic",
+          "Red pepper",
+          "Wallnut halves"
+        ]
+      }
+    ]
+  }],
+
+  "breakfast":[{
+    "time": "breakfast",
+    "at":"3",
+    "details": [
+      {
+        "name": "Breakfast Muffin",
+        "tag": "muffin",
+        "id": "5",
+        "like":"false",
+        "amount": "5",
+        "ingredients": ["Egg", "Yogurt", "Apple sauce", "Cinnamon", "Blueberry"]
+      },
+      {
+        "name": "Breakfast Smoothie",
+        "tag": "smoothie",
+        "id": "6",
+        "like":"false",
+        "amount": "4",
+        "ingredients": ["Banana", "Blackberry", "Apple juice", "Honey"]
+      }
+    ]
+  }]
+
+}

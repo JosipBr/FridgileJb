@@ -1,0 +1,112 @@
+/* written by Josip Brljevic */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*heading and the icon at the top*/
+.page{
+    margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleandicon{
+    display: flex;
+    align-items: center;
+}
+
+.titleandicon p{
+    width: 90%;
+    font-size: 60px;
+}
+
+.titleandicon .image{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleandicon img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.description{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description p{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1180px){
+    .titleandicon p{
+        font-size: 35px;
+    }
+
+    .description p{
+        font-size: 15px;
+    }
+
+    .titleandicon img{
+        width: 29,25px;
+        height: 24,75px;
+    }
+}
+
+/*recipe categories*/
+.recipecategories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.blackbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+#second img{
+    display: block !important;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0px !important;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first{
+    width: 50%;
+}
+
+.second{
+    width: 50%;
+}
+
+@media only screen and (max-width: 1180px){
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+}

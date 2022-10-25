@@ -1,0 +1,21 @@
+/* written by Josip Brljevic */
+.missingandfound{
+    padding: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    background-color: #2C2C2C;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.missingandfound p{
+    color: white;
+    font-size: 12px;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
