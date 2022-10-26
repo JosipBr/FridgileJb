@@ -19,3 +19,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.missingandfoundcontainer a{
+    width: 100%;
+}
+
+.missingandfoundcontainer{
+    width: 80%;
+    padding-left: 10px;
+}

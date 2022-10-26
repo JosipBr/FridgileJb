@@ -7,6 +7,7 @@ import Lunch from './pages/Lunch/Lunch';
 import Dinner from './pages/Dinner/Dinner';
 import AllRecipes from './pages/AllRecipes/AllRecipes';
 import Products from './pages/Products/Products';
+import MissingAndFoundPage from './pages/MissingAndFound/MissingAndFoundPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/dinner' element={<Dinner />}></Route>
       <Route path='/allrecipes' element={<AllRecipes />}></Route>
       <Route path='/products' element={<Products />}></Route>
+      <Route path='/recipeproducts' element={<MissingAndFoundPage />}></Route>
     </Routes>
     
   );

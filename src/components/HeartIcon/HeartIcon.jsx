@@ -14,6 +14,7 @@ export default function HeartIcon() {
 
     const [isChecked, setIsChecked] = useState(false);
   
+    //a function that will toggle the heart icon
     const toggleCheck = () => {
       setIsChecked(!isChecked);
 

@@ -10,6 +10,8 @@ import RecipeData from "../recipedata/recipedata.json";
 
 export default function Recipe2(props) {
   
+//RecipeData is the JSON file that contains the recipe information, the recipes are divided by 3 categories: breakfast, lunch and dinner
+
   console.log(RecipeData)
   if(props.time === "breakfast"){
     return (
@@ -19,7 +21,7 @@ export default function Recipe2(props) {
                 {post.details.map(item =>(
                      <div className="recipe" key={item.id} id={item.tag}>
                      <div className="top">
-                       <MissingAndFound />
+                       <MissingAndFound  />
                        <HeartIcon />
                      </div>
            
@@ -37,9 +39,9 @@ export default function Recipe2(props) {
   
   else if(props.time === "lunch"){
     return (
-        <div className="recipe2">
+        <div>
           {RecipeData.lunch.map((post) => (
-            <div key={post.at}>
+            <div className="recipe2" key={post.at}>
                 {post.details.map(item =>(
                      <div className="recipe" key={item.id} id={item.tag}>
                      <div className="top">
@@ -61,9 +63,9 @@ export default function Recipe2(props) {
 
   else if(props.time === "dinner"){
     return (
-        <div className="recipe2">
+        <div>
           {RecipeData.dinner.map((post) => (
-            <div key={post.at}>
+            <div className="recipe2" key={post.at}>
                 {post.details.map(item =>(
                      <div className="recipe" key={item.id} id={item.tag}>
                      <div className="top">
