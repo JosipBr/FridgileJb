@@ -9,79 +9,37 @@ import "../recipe/recipe.css";
 import RecipeData from "../recipedata/recipedata.json";
 
 export default function Recipe2(props) {
-  
-//RecipeData is the JSON file that contains the recipe information, the recipes are divided by 3 categories: breakfast, lunch and dinner
+  //RecipeData is the JSON file that contains the recipe information, the recipes are divided by 3 categories: breakfast, lunch and dinner
 
-  console.log(RecipeData)
-  if(props.time === "breakfast"){
-    return (
-        <div>
-          {RecipeData.breakfast.map((post) => (
-            <div className="recipe2" key={post.at}>
-                {post.details.map(item =>(
-                     <div className="recipe" key={item.id} id={item.tag}>
-                     <div className="top">
-                       <MissingAndFound  />
-                       <HeartIcon />
-                     </div>
-           
-                     <div className="bottom">
-                       <RecipeLink link="bbcgoodfood.com" title={item.name}></RecipeLink>
-                     </div>
-                   </div>
-                ))}
-            </div>
-            
-          ))}
-        </div>
-      );
-  }
-  
-  else if(props.time === "lunch"){
-    return (
-        <div>
-          {RecipeData.lunch.map((post) => (
-            <div className="recipe2" key={post.at}>
-                {post.details.map(item =>(
-                     <div className="recipe" key={item.id} id={item.tag}>
-                     <div className="top">
-                       <MissingAndFound />
-                       <HeartIcon />
-                     </div>
-           
-                     <div className="bottom">
-                       <RecipeLink link="bbcgoodfood.com" title={item.name}></RecipeLink>
-                     </div>
-                   </div>
-                ))}
-            </div>
-            
-          ))}
-        </div>
-      );
-  }
+  console.log(RecipeData);
 
-  else if(props.time === "dinner"){
-    return (
-        <div>
-          {RecipeData.dinner.map((post) => (
-            <div className="recipe2" key={post.at}>
-                {post.details.map(item =>(
-                     <div className="recipe" key={item.id} id={item.tag}>
-                     <div className="top">
-                       <MissingAndFound />
-                       <HeartIcon />
-                     </div>
-           
-                     <div className="bottom">
-                       <RecipeLink link="bbcgoodfood.com" title={item.name}></RecipeLink>
-                     </div>
-                   </div>
-                ))}
+ 
+
+  return (
+    <div>
+      {RecipeData.map((post) => {
+        if (props.time === post.time) {
+          return (
+            <div className="recipe2" key={post.id}>
+              <div className="recipe" id={post.tag}>
+                <div className="top">
+                  <MissingAndFound missing={post.amount} found="0" name={post.name}/>
+                  <HeartIcon />
+                </div>
+
+                <div className="bottom">
+                  <RecipeLink
+                    link="bbcgoodfood.com"
+                    title={post.name}
+                  ></RecipeLink>
+                </div>
+              </div>
             </div>
-            
-          ))}
-        </div>
-      );
-  }
+          );
+        } else {
+          return <div key={post.id}></div>;
+        }
+      })}
+    </div>
+  );
 }

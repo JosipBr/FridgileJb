@@ -1,93 +1,108 @@
-
-{
-  "dinner":[{
+[
+  {
+    "name": "Carbonara",
     "time": "dinner",
-    "at":"1",
-    "details": [
+    "tag": "carbonara",
+    "id": "1",
+    "like": "false",
+    "amount": "7",
+    "ingredients": [
       {
-        "name": "Carbonara",
-        "tag": "carbonara",
-        "id": "1",
-        "like":"false",
-        "amount": "7",
-        "ingredients": [
-          "Spaghetti",
-          "Tomato",
-          "Shrimp",
-          "Olive oil",
-          "Egg",
-          "Parmesan",
-          "Garlic"
-        ]
-      },
-      {
-        "name": "Chicken Wing Dippers",
-        "tag": "chickenwingdippers",
-        "id": "2",
-        "like":"false",
-        "amount": "4",
-        "ingredients": [
-          "Chicken wing",
-          "Cornflour",
-          "Baking powder",
-          "Sunflower oil"
-        ]
+        "item1": "Spaghetti",
+        "item2": "Tomato",
+        "item3": "Shrimp",
+        "item4": "Olive oil",
+        "item5": "Egg",
+        "item6": "Parmesan",
+        "item7": "Garlic"
       }
     ]
-  }],
+  },
 
-  "lunch":[{
+  {
+    "name": "Chicken Wing Dippers",
+    "time": "dinner",
+    "tag": "chickenwingdippers",
+    "id": "2",
+    "like": "false",
+    "amount": "4",
+    "ingredients": [
+      {
+        "item1": "Chicken wing",
+        "item2": "Cornflour",
+        "item3": "Baking powder",
+        "item4": "Sunflower oil"
+      }
+    ]
+  },
+
+  {
+    "name": "Baked Sweet Potato",
     "time": "lunch",
-    "at":"2",
-    "details": [
+    "tag": "sweetpotato",
+    "id": "3",
+    "like": "false",
+    "amount": "2",
+    "ingredients": [
       {
-        "name": "Baked Sweet Potato",
-        "tag": "sweetpotato",
-        "id": "3",
-        "like":"false",
-        "amount": "2",
-        "ingredients": ["Sweet potato", "Butter"]
-      },
-      {
-        "name": "Turkey Lunch Bowl",
-        "tag": "turkeylunchbowl",
-        "id": "4",
-        "amount": "7",
-        "like":"false",
-        "ingredients": [
-          "Onion",
-          "Lemon",
-          "Turkey breast",
-          "Clementine",
-          "Garlic",
-          "Red pepper",
-          "Wallnut halves"
-        ]
+        "item1": "Sweet potato",
+        "item2": "Butter"
       }
     ]
-  }],
+  },
 
-  "breakfast":[{
+  {
+    "name": "Turkey Lunch Bowl",
+    "time": "lunch",
+    "tag": "turkeylunchbowl",
+    "id": "4",
+    "amount": "7",
+    "like": "false",
+    "ingredients": [
+      {
+        "item1": "Onion",
+        "item2": "Lemon",
+        "item3": "Turkey breast",
+        "item4": "Clementine",
+        "item5": "Garlic",
+        "item6": "Red pepper",
+        "item7": "Wallnut halves"
+      }
+    ]
+  },
+
+  {
+    "name": "Breakfast Muffin",
     "time": "breakfast",
-    "at":"3",
-    "details": [
+    "tag": "muffin",
+    "id": "5",
+    "like": "false",
+    "amount": "5",
+    "ingredients": [
       {
-        "name": "Breakfast Muffin",
-        "tag": "muffin",
-        "id": "5",
-        "like":"false",
-        "amount": "5",
-        "ingredients": ["Egg", "Yogurt", "Apple sauce", "Cinnamon", "Blueberry"]
-      },
-      {
-        "name": "Breakfast Smoothie",
-        "tag": "smoothie",
-        "id": "6",
-        "like":"false",
-        "amount": "4",
-        "ingredients": ["Banana", "Blackberry", "Apple juice", "Honey"]
+        "item1": "Egg",
+        "item2": "Yogurt",
+        "item3": "Apple sauce",
+        "item4": "Cinnamon",
+        "item5": "Blueberry"
       }
     ]
-  }]
+  },
 
-}
+  {
+    "name": "Breakfast Smoothie",
+    "time": "breakfast",
+    "tag": "smoothie",
+    "id": "6",
+    "like": "false",
+    "amount": "4",
+    "ingredients": [
+      {
+        "item1": "Banana",
+        "item2": "Blackberry",
+        "item3": "Apple juice",
+        "item4": "Honey"
+      }
+    ]
+  }
+]

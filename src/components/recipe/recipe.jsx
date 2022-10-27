@@ -19,10 +19,8 @@ export default function Recipe(props) {
       setRecipe("breakfast");
     } else if (currentTime >= "10:00:01" && currentTime <= "14:00:00") {
       setRecipe("lunch");
-      console.log("lunch");
     } else if (currentTime >= "14:00:01" && currentTime <= "23:59:59") {
       setRecipe("dinner");
-      console.log("dinner");
     }
   }, []);
 
@@ -30,7 +28,7 @@ export default function Recipe(props) {
     return(
         <div className="recipe" id="sweetpotato">
             <div className="top">
-            <MissingAndFound link="/recipeproducts" />
+            <MissingAndFound link="/recipeproducts" missing="3" found="0"/>
             <HeartIcon />
           </div>
 
@@ -45,10 +43,10 @@ export default function Recipe(props) {
 
   else if(recipe === "dinner"){
     return(
-        <div className="recipe" id="carbonara">
+        <div className="recipe" id="carbonara" >
 
           <div className="top">
-            <MissingAndFound link="/recipeproducts"/>
+            <MissingAndFound link="/recipeproducts" missing="7" found="0"/>
             <HeartIcon />
           </div>
 
@@ -66,7 +64,7 @@ export default function Recipe(props) {
         <div className="recipe" id="muffin">
 
           <div className="top">
-            <MissingAndFound link="/recipeproducts"/>
+            <MissingAndFound link="/recipeproducts" missing="5" found="0"/>
             <HeartIcon />
           </div>
 
