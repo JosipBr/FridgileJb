@@ -7,15 +7,13 @@
     "like": "false",
     "amount": "7",
     "ingredients": [
-      {
-        "item1": "Spaghetti",
-        "item2": "Tomato",
-        "item3": "Shrimp",
-        "item4": "Olive oil",
-        "item5": "Egg",
-        "item6": "Parmesan",
-        "item7": "Garlic"
-      }
+      "Spaghetti",
+      "Tomato",
+      "Shrimp",
+      "Olive oil",
+      "Egg",
+      "Parmesan",
+      "Garlic"
     ]
   },
 
@@ -27,12 +25,10 @@
     "like": "false",
     "amount": "4",
     "ingredients": [
-      {
-        "item1": "Chicken wing",
-        "item2": "Cornflour",
-        "item3": "Baking powder",
-        "item4": "Sunflower oil"
-      }
+      "Chikken wing",
+      "Corn flour",
+      "Baking powder",
+      "Sunflower oil"
     ]
   },
 
@@ -43,12 +39,7 @@
     "id": "3",
     "like": "false",
     "amount": "2",
-    "ingredients": [
-      {
-        "item1": "Sweet potato",
-        "item2": "Butter"
-      }
-    ]
+    "ingredients": ["Sweet potato", "Butter"]
   },
 
   {
@@ -59,15 +50,13 @@
     "amount": "7",
     "like": "false",
     "ingredients": [
-      {
-        "item1": "Onion",
-        "item2": "Lemon",
-        "item3": "Turkey breast",
-        "item4": "Clementine",
-        "item5": "Garlic",
-        "item6": "Red pepper",
-        "item7": "Wallnut halves"
-      }
+      "Onion",
+      "Lemon",
+      "Turkey breast",
+      "Clementine",
+      "Garlic",
+      "Red pepper",
+      "Wallnut halves"
     ]
   },
 
@@ -78,15 +67,7 @@
     "id": "5",
     "like": "false",
     "amount": "5",
-    "ingredients": [
-      {
-        "item1": "Egg",
-        "item2": "Yogurt",
-        "item3": "Apple sauce",
-        "item4": "Cinnamon",
-        "item5": "Blueberry"
-      }
-    ]
+    "ingredients": ["Egg", "Yogurt", "Apple sauce", "Cinnamon", "Blueberry"]
   },
 
   {
@@ -96,13 +77,6 @@
     "id": "6",
     "like": "false",
     "amount": "4",
-    "ingredients": [
-      {
-        "item1": "Banana",
-        "item2": "Blackberry",
-        "item3": "Apple juice",
-        "item4": "Honey"
-      }
-    ]
+    "ingredients": ["Banana", "Blackberry", "Apple juice", "Honey"]
   }
 ]

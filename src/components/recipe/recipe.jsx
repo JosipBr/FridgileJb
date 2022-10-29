@@ -28,7 +28,7 @@ export default function Recipe(props) {
     return(
         <div className="recipe" id="sweetpotato">
             <div className="top">
-            <MissingAndFound link="/recipeproducts" missing="3" found="0"/>
+            <MissingAndFound link="/recipeproducts" missing="3" found="0" name="Baked Sweet Potato"/>
             <HeartIcon />
           </div>
 
@@ -46,7 +46,7 @@ export default function Recipe(props) {
         <div className="recipe" id="carbonara" >
 
           <div className="top">
-            <MissingAndFound link="/recipeproducts" missing="7" found="0"/>
+            <MissingAndFound link="/recipeproducts" missing="7" found="0" name="Carbonara"/>
             <HeartIcon />
           </div>
 
@@ -64,7 +64,7 @@ export default function Recipe(props) {
         <div className="recipe" id="muffin">
 
           <div className="top">
-            <MissingAndFound link="/recipeproducts" missing="5" found="0"/>
+            <MissingAndFound link="/recipeproducts" missing="5" found="0" name="Breakfast Muffin"/>
             <HeartIcon />
           </div>
 

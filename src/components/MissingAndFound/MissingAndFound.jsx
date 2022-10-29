@@ -11,13 +11,11 @@ export default function MissingAndFound(props) {
 
  
     
-  const ingredients = () => {
+  const ingredientss = () => {
     RecipeData.map((post)=>{
       if(post.name === props.name){
         return(
-          post.ingredients.map((item) =>(
-            sessionStorage.setItem("recipeitem", item)
-          ))
+          localStorage.setItem("recipedata", post.ingredients)
         )
       }
       else{
@@ -30,7 +28,7 @@ export default function MissingAndFound(props) {
 
   return (
     <div className="missingandfoundcontainer">
-      <Link to="/recipeproducts" onClick={ingredients}>
+      <Link to="/recipeproducts" onClick={ingredientss}>
         <div className="missingandfound">
           <p>Missing: {props.missing} </p>
           <p>Found: {props.found} </p>

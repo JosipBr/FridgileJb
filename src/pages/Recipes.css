@@ -12,6 +12,7 @@ p{
 
 /*heading and the icon at the top*/
 .page{
+    height: 90vh;
     margin-top: 5%;
     width: 90%;
     margin-left: auto;
