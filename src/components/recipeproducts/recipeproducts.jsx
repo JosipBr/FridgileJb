@@ -4,25 +4,18 @@
 */
 
 import { useState } from "react";
-import AddIcon from "../../recipesimages/add.svg";
-import MinusQuantity from "../../recipesimages/minus.svg";
-import PlusQuantity from "../../recipesimages/plus.svg";
-import Checked from "../../recipesimages/checked.svg"
+import AddIcon2 from "../../recipesimages/add3.png";
+import Checked from "../../recipesimages/checked.png";
 import "./recipeproducts.css";
 
 export default function RecipeProduct() {
-  const [counter, setCounter] = useState(1);
-  const incrementCounter = () => setCounter(counter + 1);
-  const decrementCounter = () => setCounter(counter - 1);
-
   const [isChecked, setIsChecked] = useState(false);
-  
-    const toggleCheck = () => {
-      setIsChecked(!isChecked);
 
-    }
-  
-    const checkbox = isChecked ? Checked : AddIcon;
+  const toggleCheck = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const checkbox = isChecked ? Checked : AddIcon2;
 
   return (
     <div className="recipeproduct">
@@ -30,27 +23,10 @@ export default function RecipeProduct() {
         <img src={checkbox} alt="add" onClick={toggleCheck}></img>
       </div>
       <div className="recipeproductdata">
-        <p>Map the data here</p>
+        <p>Milk</p>
       </div>
-
-      <div className="quantity">
-        <img
-          style={{ cursor: "pointer" }}
-          onClick={decrementCounter}
-          src={MinusQuantity}
-          alt="minus"
-        />
-
-        <div className="counter">
-          <p>{counter}</p>
-        </div>
-
-        <img
-          style={{ cursor: "pointer" }}
-          onClick={incrementCounter}
-          src={PlusQuantity}
-          alt="plus"
-        />
+      <div className="expirationtime">
+        <p>2 days left</p>
       </div>
     </div>
   );

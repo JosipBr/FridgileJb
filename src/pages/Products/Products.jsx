@@ -25,13 +25,23 @@ export default function Products() {
         </div>
       </div>
 
-      <div className="description">
+      <div className="productdescription">
         <p>Choose the food itmes from your fridge you would like to use:</p>
+      </div>
+
+      <div className="expiring">
+        <p>Recommended items close to expiring:</p>
       </div>
 
       <div className="productlist">
         <RecipeProduct />
       </div>
+
+      <div className="expiring">
+        <p>Selected food items:</p>
+      </div>
+      
+      {/* add the part where you move the selected item to this part*/}
 
     </div>
   );

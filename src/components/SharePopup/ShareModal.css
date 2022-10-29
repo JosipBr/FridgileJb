@@ -2,6 +2,10 @@ body.active-modal {
   overflow-y: hidden;
 }
 
+.zindex{
+  z-index: 2;
+}
+
 .btn-modal {
   padding: 10px 20px;
   display: block;

@@ -29,6 +29,39 @@
 }
 
 .productdescription {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.expiring{
   margin-bottom: 20px;
+}
+
+.productdescription p{
+  font-size: 30px;
+}
+
+.expiring p{
+  font-size: 25px;
+}
+
+.expiring{
+  margin-top: 30px;
+}
+
+.productlist{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1180px){
+
+  .productdescription p{
+    font-size: 15px;
+  }
+
+  .expiring p{
+    font-size: 15px;
+  }
+
 }
