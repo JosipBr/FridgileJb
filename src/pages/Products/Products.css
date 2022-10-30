@@ -6,13 +6,12 @@
 
 .cancelandsave button {
   background: none;
-  color: inherit;
   border: none;
   padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  color: #343434;
+  color: #e57b07;
   font-size: 15px;
 }
 
@@ -49,6 +48,11 @@
   margin-top: 30px;
 }
 
+.selectedfood{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
 .productlist{
   display: flex;
   flex-wrap: wrap;
@@ -64,4 +68,17 @@
     font-size: 15px;
   }
 
+}
+
+.chosen{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#empty p{
+  font-size: 15px;
+}
+
+.hidden{
+  display: none;
 }

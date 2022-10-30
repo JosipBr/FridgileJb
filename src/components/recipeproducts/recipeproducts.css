@@ -3,53 +3,53 @@
 */
 
 .recipeproduct {
-    background-color: #dbeddd;
-    width: 103px;
-    height: 105px;
-    margin-top: 10px;
-    margin-right: 15px;
-    position: relative;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #dbeddd;
+  width: 103px;
+  height: 105px;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.addicon img{
-    position: absolute;
-   top: 0;
-   right: 0;
-   margin-top: -10px;
-   margin-right: -10px;
-    width: 27px;
-    height: 27px;
+.addicon img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -10px;
+  margin-right: -10px;
+  width: 27px;
+  height: 27px;
 }
 
 .recipeproductdata {
-  width: 40%;
+  width: 50%;
 }
 
 .recipeproductdata a {
   font-size: 20px;
 }
 
-.recipeproductdata p, .expirationtime p{
-    text-align: center;
-} 
-
-.recipeproductdata{
-    margin-bottom: 20px;
+.recipeproductdata p,
+.expirationtime p {
+  text-align: center;
 }
 
-.expirationtime{
-    background-color: #ff9898;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    padding: 5px;
- 
+.recipeproductdata {
+  margin-bottom: 20px;
+}
+
+.expirationtime {
+  background-color: #ff9898;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .addicon {
@@ -59,8 +59,8 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 1180px){
-    .expirationtime p{
-        font-size: 12px;
-    }
+@media only screen and (max-width: 1180px) {
+  .expirationtime p {
+    font-size: 12px;
+  }
 }

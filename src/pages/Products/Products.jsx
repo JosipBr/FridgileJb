@@ -8,10 +8,17 @@ import RecipeProduct from "../../components/recipeproducts/recipeproducts";
 import "./Products.css";
 
 export default function Products() {
+  const re = /, ?|\n/gm;
+  let i = 2;
+
+  //DANIII ->example for the local storage
+  localStorage.setItem("name", "Garlic,Shrimp,Orange,Banana");
+  const myitemsstorage = localStorage.getItem("name");
+  let myitems = myitemsstorage.split(re);
+
   const navigate = useNavigate();
   return (
     <div className="page">
-
       <div className="cancelandsave">
         <div className="left">
           <button className="cancel" onClick={() => navigate(-1)}>
@@ -34,15 +41,18 @@ export default function Products() {
       </div>
 
       <div className="productlist">
-        <RecipeProduct />
+        {myitems.map((item, index) => (
+          <RecipeProduct name={item} time={i++} key={index} tag={i++}/>
+        ))}
       </div>
 
-      <div className="expiring">
+      <div className="selectedfood">
         <p>Selected food items:</p>
       </div>
-      
-      {/* add the part where you move the selected item to this part*/}
 
+      <div className="chosen" id="selected">
+        <p id="empty">You haven´t selected any items yet.</p>
+      </div>
     </div>
   );
 }
